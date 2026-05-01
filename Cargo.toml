@@ -1,0 +1,31 @@
+[package]
+name = "scraper-v2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+dotenvy = "0.15.7"
+env_logger = "0.11.8"
+futures-util = "0.3.31"
+log = "0.4.27"
+serde = { version="1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+tokio = { version = "1.38.0", features = ["full"] }
+tokio-tungstenite = { version = "0.18", features = ["native-tls"] }
+diesel = { version = "2.1.0", features = ["postgres", "r2d2"] }
+reqwest = "0.12.15"
+base64 = "0.22.1"
+lz4 = "1.28.1"
+rand = "0.9.1"
+bytes = "1.10.1"
+infer = "0.19.0"
+onig = { git = "https://github.com/rust-onig/rust-onig", revision = "fa90c0e97e90a056af89f183b23cd417b59ee6a2" }
+gemini-rs = "1.1.0"
+yup-oauth2 = "12.1.0"
+google-gmail1 = "6.0.0"
+hyper = { version = "0.14", features = ["client", "http1"] }
+hyper-rustls = "0.27.5"
+rustls = { version = "0.23.27", features = ["custom-provider"] }
+
+[patch.crates-io]
+onig_sys = { git = "https://github.com/rust-onig/rust-onig", revision = "fa90c0e97e90a056af89f183b23cd417b59ee6a2" }
