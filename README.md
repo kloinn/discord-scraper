@@ -20,4 +20,8 @@ This repository also contains email-related logic for receiving DSA emails, spec
 
 This will cause this scraper to crash if you don't provide a `clientsecret.json` file, however since email is not a required feature, you can just comment all of its logic out.
 
-This also has a hardcoded email of `discordreporting@duck.com` (https://github.com/kloinn/discord-scraper/blob/main/src/email.rs#L72), which should be changed or commented out.
+This also has a hardcoded email of `discordreporting@duck.com` (https://github.com/kloinn/discord-scraper/blob/main/src/email.rs#L72, https://github.com/kloinn/discord-scraper/blob/main/src/dsa.rs#L142), which should be changed or commented out.
+
+### Cloudflare
+
+This uses a stale __dcfduid cookie which is known for flagging Discord's spam filters (confirmed by the Zendesk Discord breach) (https://github.com/kloinn/discord-scraper/blob/main/src/dsa.rs#L67), aswell as a hardcoded timezone in https://github.com/kloinn/discord-scraper/blob/main/src/dsa.rs#L63
