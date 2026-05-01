@@ -1,6 +1,6 @@
 # discord-scraper
 
-Snapshot of Aconite's private respository, which is a Discord scraper I was developing for fun years ago. Quite frankly, back then I didn't even know the difference between .clone() and a reference, and didn't know about .unwrap(). 
+Snapshot of Aconite's private respository, which is a Discord scraper I was developing for fun years ago. Back then, I had no idea what I was doing and quite frankly, and I didn't even know the difference between .clone() and a reference, and didn't know about .unwrap(). 
 
 This codebase is terrible. Only use this as a reference (and it also flags Discord's anti-spam filters)
 
