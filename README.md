@@ -20,4 +20,4 @@ This repository also contains email-related logic for receiving DSA emails, spec
 
 This will cause this scraper to crash if you don't provide a `clientsecret.json` file, however since email is not a required feature, you can just comment all of its logic out.
 
-This also has a hardcoded email of `discordreporting@duck.com` (https://github.com/kloinn/discord-scraper/blob/main/src/email.rs#L72), which you need to change
+This also has a hardcoded email of `discordreporting@duck.com` (https://github.com/kloinn/discord-scraper/blob/main/src/email.rs#L72), which should be changed or commented out.
